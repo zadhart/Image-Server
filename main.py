@@ -33,4 +33,4 @@ def upload_file():
     </form>
     '''
 
-app.run()
+app.run(host='0.0.0.0')
