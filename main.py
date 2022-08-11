@@ -12,7 +12,7 @@ def hello_world():
 
 @app.route('/get_image/<picture_id>')
 def get_image(picture_id):
-    return send_file("C:\\Users\\Pygmalion\\Desktop\\testando\\upload\\"+str(picture_id)+".jpg", mimetype='image/gif')
+    return send_file("/home/pygmalion/Image-Server/upload/"+str(picture_id)+".jpg", mimetype='image/gif')
 
 @app.route('/send_image', methods=['GET', 'POST'])
 def upload_file():
